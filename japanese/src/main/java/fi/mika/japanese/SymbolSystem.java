@@ -13,10 +13,10 @@ public class SymbolSystem {
 
     public final String name;
     
-    private final int HEXDECIMAL_BASE_VALUE=16;
-    private final int SYMBOL_BLOCKSTART_HEXVALUE;
-    private final int SYMBOL_BLOCK_ROWS;
-    private final String[] westernNames;
+    public final int HEXDECIMAL_BASE_VALUE=16;
+    public final int SYMBOL_BLOCKSTART_HEXVALUE;
+    public final int SYMBOL_BLOCK_ROWS;
+    public  final String[] westernNames;
 
     public SymbolSystem(String name,int SYMBOL_BLOCKSTART_HEXVALUE, String[] westernNames) {
         this.name=name;

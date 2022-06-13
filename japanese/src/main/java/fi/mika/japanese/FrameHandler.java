@@ -27,7 +27,8 @@ public class FrameHandler {
     }
 
     void handleDump() {
-        mf.setText(system.blockDump());
+        //mf.setText(system.blockDump());
+        new SymbolKeyboardFrame(this, this.system);
     }
 
     void handleHiraganaToWestern() {
@@ -62,6 +63,10 @@ public class FrameHandler {
 
     }
 
+    public void addCOMText(String s) {
+        mf.setCOMText(mf.getCOMText() + s);
+    }
+    
     private void addText(String s) {
         mf.setText(mf.getText() + s);
     }
